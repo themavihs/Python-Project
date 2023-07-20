@@ -1,0 +1,83 @@
+print('Welcome to my computer quiz!')
+
+game = input("Do you want to play this friend's quiz? ")
+if game.lower() != 'yes':
+    quit()
+print("Okay! Let's play:)")
+score = 0
+
+question = input("What song is Phoebe best known for? ")
+if question.lower() == 'smelly cat':
+    print('Correct!')
+    score += 1
+
+else:
+    print('Incorrect!')
+
+
+question = input("What does Joey never share? ")
+if question.lower() == 'food':
+    print('Correct!')
+    score += 1
+else:
+    print('Incorrect!')
+
+question = input("What is Monica skilled at? ")
+if question.lower() == 'cooking':
+    print('Correct!')
+    score += 1
+else:
+    print('Incorrect!')
+
+
+question = input("What’s the name of Joey’s penguin?  ")
+if question.lower() == 'huggsy':
+    print('Correct!')
+    score += 1
+else:
+    print('Incorrect!')
+
+question = input("What’s the name of Janice’s first husband?  ")
+if question.lower() == 'gary litman':
+    print('Correct!')
+    score += 1
+else:
+    print('Incorrect!')
+
+question = input("What job does Ross have?   ")
+if question.lower() == 'paleontologist':
+    print('Correct!')
+    score += 1
+else:
+    print('Incorrect!')
+
+question = input("What is Chandler’s middle name?  ")
+if question.lower() == 'muriel':
+    print('Correct!')
+    score += 1
+else:
+    print('Incorrect!')
+
+question = input("What’s the name of the grumpy person who works at the coffee shop? ")
+if question.lower() == 'gunther':
+    print('Correct!')
+    score += 1
+else:
+    print('Incorrect!')
+
+question = input("What are Ross and Monica’s parents called? ")
+if question.lower() == 'jack and judy':
+    print('Correct!')
+    score += 1
+else:
+    print('Incorrect!')
+
+question = input("What kind of uniform does Joey wear to Monica and Chandler’s wedding? ")
+if question.lower() == 'soldier':
+    print('Correct!')
+    score += 1
+else:
+    print('Incorrect!')
+
+print("You got " + str(score) + " questions correct!")
+print("You got " + str((score/10) * 100) + "%")
