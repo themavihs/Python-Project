@@ -1,0 +1,12 @@
+import pyttsx3
+
+text = pyttsx3.init()
+
+print("Welcome to the text to speech program")
+while True:
+    speech = input("Enter the text and press q if you want to quit: ")
+    if speech == "q":
+        break
+
+    text.say(speech)
+    text.runAndWait()
